@@ -1,25 +1,69 @@
-import logo from './logo.svg';
-import './App.css';
+/**
+ * =========================================================
+ * MAIN APPLICATION FILE (FINAL CLEAN VERSION)
+ * =========================================================
+ * Responsibilities:
+ * - Routing
+ * - Layout structure
+ * - Persistent Navbar + Footer
+ * - Scroll handling
+ */
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React, { Component } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+// Components
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Home from "./components/Home";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Resume from "./components/Resume";
+import Contact from "./components/Contact";
+import ScrollToTop from "./components/ScrollToTop";
+
+// Styles
+import "./App.css";
+
+class App extends Component {
+  render() {
+    return (
+      <BrowserRouter>
+
+        {/* Scroll to top when route changes */}
+        <ScrollToTop />
+
+        {/* Navbar (always visible) */}
+        <Navbar />
+
+        {/* Main Content */}
+        <div className="app-container">
+          <Routes>
+
+            {/* Home */}
+            <Route path="/" element={<Home />} />
+
+            {/* About */}
+            <Route path="/about" element={<About />} />
+
+            {/* Projects */}
+            <Route path="/projects" element={<Projects />} />
+
+            {/* Resume */}
+            <Route path="/resume" element={<Resume />} />
+
+            {/* Contact */}
+            <Route path="/contact" element={<Contact />} />
+
+          </Routes>
+        </div>
+
+        {/* Footer (always visible) */}
+        <Footer />
+
+      </BrowserRouter>
+    );
+  }
 }
 
 export default App;

@@ -1,0 +1,132 @@
+/* ================= BASE ================= */
+
+.about {
+  padding: 60px 20px;
+}
+
+/* DARK */
+.dark-theme {
+  background-color: #020617;
+  color: #ffffff;
+}
+
+/* LIGHT */
+.light-theme {
+  background-color: #f8fafc;
+  color: #111827;
+}
+
+/* ================= TOP SECTION ================= */
+
+.about__top {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* TEXT */
+.about__title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.about__title span {
+  color: #a855f7;
+}
+
+.about__text {
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.about__text span {
+  color: #a855f7;
+  font-weight: bold;
+}
+
+/* ================= HOBBIES ================= */
+
+.about__hobbies {
+  margin-top: 20px;
+}
+
+.about__hobbies p {
+  margin-bottom: 10px;
+}
+
+/* ================= IMAGE ================= */
+
+.about__image img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* ================= SKILLS ================= */
+
+.about__section-title {
+  text-align: center;
+  font-size: 26px;
+  margin: 40px 0 20px;
+}
+
+.about__section-title span {
+  color: #a855f7;
+}
+
+/* SKILLS GRID */
+.about__skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.about__skills span {
+  padding: 10px 18px;
+  border-radius: 25px;
+  border: 1px solid #a855f7;
+}
+
+/* ================= TOOLS ================= */
+
+.about__tools {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.about__tools span {
+  padding: 10px 18px;
+  border-radius: 25px;
+  border: 1px solid #22c55e;
+}
+
+/* ================= TABLET ================= */
+
+@media (min-width: 768px) {
+
+  .about__top {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .about__content {
+    width: 60%;
+  }
+
+  .about__image {
+    width: 40%;
+  }
+
+}
+
+/* ================= DESKTOP ================= */
+
+@media (min-width: 1024px) {
+
+  .about__title {
+    font-size: 40px;
+  }
+
+}

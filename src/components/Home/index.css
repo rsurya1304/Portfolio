@@ -1,0 +1,152 @@
+/* ================= BASE ================= */
+
+.home {
+  padding: 40px 20px;
+}
+
+/* ================= HERO ================= */
+
+.home__hero {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* LEFT */
+.home__hello {
+  font-size: 24px;
+}
+
+.wave {
+  animation: wave 1s infinite;
+}
+
+@keyframes wave {
+  50% { transform: rotate(20deg); }
+}
+
+.home__name {
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.highlight {
+  color: #c084fc;
+}
+
+.home__role {
+  font-size: 20px;
+}
+
+/* RIGHT IMAGE */
+.home__hero-img {
+  width: 100%;
+  max-width: 350px;
+}
+
+/* ================= ABOUT ================= */
+
+.home__about {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.home__about-title {
+  font-size: 28px;
+}
+
+.home__about-text {
+  margin-top: 15px;
+  line-height: 1.6;
+}
+
+/* PROFILE */
+
+.profile__img{
+  width: 350px;
+  height: 450px;
+  background: #7c3aed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  
+}
+/* ================= SOCIAL ================= */
+
+.home__social {
+  margin-top: 80px;
+  text-align: center;
+ 
+}
+
+.home__icons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 30px;
+  color: normal
+}
+
+.home__icons a {
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ================= DESKTOP ================= */
+
+@media (min-width: 768px) {
+
+  .home__hero {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .home__left {
+    width: 60%;
+  }
+
+  .home__right {
+    width: 40%;
+  }
+
+  .home__about {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 300px;
+  }
+
+  .home__about-left {
+    width: 60%;
+  }
+
+  .home__about-right {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .home__name {
+    font-size: 48px;
+  }
+}
+
+/* ================= CURSOR ================= */
+
+.cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}

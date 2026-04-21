@@ -1,0 +1,14 @@
+/* =========================================================
+   SCROLL BUTTON
+   ========================================================= */
+
+.scroll-btn {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+
+  padding: 10px 15px;
+  border-radius: 50%;
+  background: #00f5ff;
+  color: black;
+}

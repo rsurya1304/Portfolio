@@ -1,0 +1,95 @@
+/* ================= BASE ================= */
+
+.projects {
+  padding: 80px 20px;
+}
+
+/* ================= CONTAINER ================= */
+
+.projects__container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ================= TITLE ================= */
+
+.projects__title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.projects__title span {
+  color: #c084fc;
+}
+
+/* ================= FILTER BUTTONS ================= */
+
+.projects__filters {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.filter-btn {
+  padding: 10px 22px;
+  border-radius: 25px;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* DARK */
+.dark-theme .filter-btn {
+  background: #1e293b;
+  color: #ffffff;
+}
+
+/* LIGHT */
+.light-theme .filter-btn {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+/* ACTIVE */
+.filter-btn.active {
+  background: #c084fc;
+  color: #ffffff;
+}
+
+/* HOVER */
+.filter-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* ================= GRID ================= */
+
+.projects__grid {
+  display: grid;
+  gap: 25px;
+}
+
+/* MOBILE */
+.projects__grid {
+  grid-template-columns: 1fr;
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+  .projects__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+  .projects__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

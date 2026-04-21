@@ -1,0 +1,106 @@
+/* ================= CARD ================= */
+
+.project-card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+/* DARK THEME */
+.dark-theme .project-card {
+  background-color: #020617;
+  border: 1px solid #1e293b;
+}
+
+/* LIGHT THEME */
+.light-theme .project-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+}
+
+/* HOVER */
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+/* ================= IMAGE ================= */
+
+.project-card__image img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* ================= CONTENT ================= */
+
+.project-card__content {
+  padding: 18px;
+}
+
+/* TITLE */
+.project-card__title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* DARK TEXT */
+.dark-theme .project-card__title {
+  color: #ffffff;
+}
+
+/* LIGHT TEXT */
+.light-theme .project-card__title {
+  color: #111827;
+}
+
+/* DESCRIPTION */
+.project-card__desc {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* DARK TEXT */
+.dark-theme .project-card__desc {
+  color: #cbd5f5;
+}
+
+/* LIGHT TEXT */
+.light-theme .project-card__desc {
+  color: #4b5563;
+}
+
+/* ================= BUTTONS ================= */
+
+.project-card__buttons {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+/* BUTTON BASE */
+.btn {
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* GITHUB BUTTON */
+.btn.github {
+  background-color: transparent;
+  border: 1px solid #c084fc;
+  color: #c084fc;
+}
+
+/* LIVE BUTTON */
+.btn.live {
+  background-color: #00f5ff;
+  color: #000;
+}
+
+/* HOVER EFFECT */
+.btn:hover {
+  transform: translateY(-2px);
+}

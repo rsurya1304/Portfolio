@@ -1,0 +1,118 @@
+/* =========================================================
+   FOOTER - PROFESSIONAL DESIGN
+========================================================= */
+
+/* ================= BASE ================= */
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+
+  z-index: 1000;
+}
+
+/* ================= THEME ================= */
+
+.dark-theme .footer {
+  background-color: #020617;
+  color: #ffffff;
+  border-top: 1px solid #1e293b;
+}
+
+.light-theme .footer {
+  background-color: #ffffff;
+  color: #111827;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* ================= CONTAINER ================= */
+
+.footer__container {
+  width: 100%;
+  padding: 0 25px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ================= LEFT ================= */
+
+.footer__left {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__logo {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer__text {
+  font-size: 20px;
+}
+
+/* ================= RIGHT ================= */
+
+.footer__right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* ================= SOCIAL ================= */
+
+.footer__socials {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 3px;
+}
+
+.footer__icon {
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.footer__icon:hover {
+  color: #00f5ff;
+  transform: scale(1.2);
+}
+
+/* ================= COPY ================= */
+
+.footer__copy {
+  font-size:18px;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+  .footer {
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .footer__container {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .footer__right {
+    align-items: center;
+  }
+  .footer__copy {
+  font-size: 12px;
+}
+.footer__text {
+  font-size: 12px;
+}
+}

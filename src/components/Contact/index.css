@@ -1,0 +1,118 @@
+/* ================= BASE ================= */
+
+.contact {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* DARK */
+.dark-theme {
+  background-color: #020617;
+  color: #ffffff;
+}
+
+/* LIGHT */
+.light-theme {
+  background-color: #f8fafc;
+  color: #111827;
+}
+
+/* ================= HEADING ================= */
+
+.contact__heading {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.contact__heading span {
+  color: #a855f7;
+}
+
+/* ================= CARDS ================= */
+
+.contact__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+/* CARD */
+.contact__card {
+  width: 100%;
+  max-width: 350px;
+
+  padding: 20px;
+  border-radius: 12px;
+
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* DARK CARD */
+.dark-theme .contact__card {
+  background-color: #0f172a;
+  border: 1px solid #1e293b;
+}
+
+/* LIGHT CARD */
+.light-theme .contact__card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+}
+
+/* ICON */
+.contact__card svg {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* TEXT */
+.contact__card p {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.contact__card span {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* HOVER */
+.contact__card:hover {
+  transform: translateY(-5px);
+}
+
+/* ================= SOCIAL ================= */
+
+.contact__socials {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact__socials a {
+  font-size: 22px;
+  transition: 0.3s;
+}
+
+/* HOVER */
+.contact__socials a:hover {
+  color: #a855f7;
+  transform: scale(1.2);
+}
+
+/* ================= TABLET ================= */
+
+@media (min-width: 768px) {
+
+  .contact__cards {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+}
+.footer__icon{
+  width:50px;
+}

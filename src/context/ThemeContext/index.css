@@ -1,0 +1,41 @@
+/* ============================================
+   THEME CLASSES
+============================================ */
+
+/* DARK MODE */
+.dark {
+  background-color: #0f172a;
+  color: #ffffff;
+}
+
+/* LIGHT MODE */
+.light {
+  background-color: #ffffff;
+  color: #111827;
+}
+/* ================= GLOBAL THEMES ================= */
+
+/* DARK MODE */
+/* ================= GLOBAL THEME VARIABLES ================= */
+
+.theme-dark {
+  --bg-main: #020617;
+  --bg-secondary: #0f172a;
+  --text-color: #ffffff;
+  --primary: #00f5ff;
+}
+
+/* LIGHT */
+.theme-light {
+  --bg-main: #f8fafc;
+  --bg-secondary: #ffffff;
+  --text-color: #111827;
+  --primary: #2563eb;
+}
+
+/* APPLY GLOBAL */
+body {
+  background: var(--bg-main);
+  color: var(--text-color);
+  transition: all 0.4s ease;
+}

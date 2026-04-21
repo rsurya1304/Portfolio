@@ -1,13 +1,96 @@
-body {
+/* =========================================================
+   GLOBAL RESET
+========================================================= */
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* =========================================================
+   BODY DEFAULT
+========================================================= */
+
+body {
+  font-family: Arial, sans-serif;
+  transition: all 0.4s ease;
+}
+
+/* =========================================================
+   DARK THEME (FULL APP)
+========================================================= */
+
+.dark-theme {
+  background-color: #020617;
+  color: #ffffff;
+}
+
+/* Navbar in dark */
+.dark-theme .navbar {
+  background-color: #020617;
+  color: #ffffff;
+  border-bottom: 1px solid #1e293b;
+}
+
+/* Footer in dark */
+.dark-theme .footer {
+  background-color: #020617;
+  color: #ffffff;
+  border-top: 1px solid #1e293b;
+}
+
+/* Sections in dark */
+.dark-theme .home,
+.dark-theme .about,
+.dark-theme .projects,
+.dark-theme .contact,
+.dark-theme .resume {
+  background-color: #020617;
+  color: #ffffff;
+}
+
+/* Buttons dark */
+.dark-theme .home__btn--primary {
+  background-color: #00f5ff;
+  color: #000;
+}
+
+/* =========================================================
+   LIGHT THEME (FULL APP)
+========================================================= */
+
+.light-theme {
+  background-color: #ffffff;
+  color: #111827;
+}
+
+/* Navbar in light */
+.light-theme .navbar {
+  background-color: #ffffff;
+  color: #111827;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Footer in light */
+.light-theme .footer {
+  background-color: #ffffff;
+  color: #111827;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* Sections in light */
+.light-theme .home,
+.light-theme .about,
+.light-theme .projects,
+.light-theme .contact,
+.light-theme .resume {
+  background-color: #ffffff;
+  color: #111827;
+}
+
+/* Buttons light */
+.light-theme .home__btn--primary {
+  background-color: #2563eb;
+  color: #ffffff;
 }
