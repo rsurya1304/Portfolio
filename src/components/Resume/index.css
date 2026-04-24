@@ -2,33 +2,42 @@
 
 .resume {
   width: 100%;
-  text-align: center;
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* ================= DOWNLOAD BUTTON ================= */
 
 .resume__download {
-  margin: 20px 0;
+  margin-bottom: 20px;
 }
 
 .resume__download a {
-  background-color: #7c3aed;
+  background: linear-gradient(135deg, #7c3aed, #a855f7);
   color: white;
-  padding: 10px 20px;
+  padding: 12px 22px;
   border-radius: 8px;
   text-decoration: none;
-  font-size: 14px;
-  transition: 0.3s;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-block;
 }
 
 .resume__download a:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(168, 85, 247, 0.4);
 }
 
 /* ================= PDF VIEW ================= */
 
 .resume__frame {
-  width: 100%;
-  height: calc(100vh - 120px);
+  width: 95%;
+  max-width: 900px;
+  height: 80vh;
   border: none;
+  border-radius: 10px;
+  background-color: #ffffff;
 }

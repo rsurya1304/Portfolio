@@ -136,13 +136,13 @@ class Home extends Component {
 
             <p className="home__about-text">
               I am a passionate and detail-oriented 
-              <span className="highlight"> Java Full Stack Developer</span> 
+              <span className="highlight"> Java Full Stack Developer </span> 
               with hands-on experience in building scalable applications.
             </p>
 
             <p className="home__about-text">
               I specialize in 
-              <span className="highlight"> Spring Boot, REST APIs, Hibernate, JPA</span> 
+              <span className="highlight"> Spring Boot, REST APIs, Hibernate, JPA </span> 
               and frontend technologies like 
               <span className="highlight"> React.js, JavaScript, HTML5, CSS3</span>.
             </p>

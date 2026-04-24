@@ -5,11 +5,25 @@ const Resume = () => {
   return (
     <section className="resume">
 
-      {/* PDF VIEW */}
-      
-<iframe src="https://1drv.ms/b/c/14d67c01bbad20c8/IQQcOccLLKMoRqbLQRD53iMnAYTNVrdvRqJtNsZ6lfUY73g" width="98"
-        height="120" frameborder="0" scrolling="no"title="Resume"
-        className="resume__frame"></iframe>
+      {/* ✅ DOWNLOAD BUTTON (TOP) */}
+      <div className="resume__download">
+        <a
+          href="https://drive.google.com/uc?export=download&id=1cZWdSIJznHkk2ieXkyqx08OLxadlsNZ3"
+          target="_blank"
+          rel="noopener noreferrer"
+          download
+        >
+          ⬇ Download Resume
+        </a>
+      </div>
+
+      {/* ✅ PDF PREVIEW */}
+      <iframe
+        src="https://drive.google.com/file/d/1cZWdSIJznHkk2ieXkyqx08OLxadlsNZ3/preview"
+        title="Resume"
+        className="resume__frame"
+      ></iframe>
+
     </section>
   );
 };

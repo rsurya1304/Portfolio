@@ -25,59 +25,61 @@ class About extends Component {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
-
               <h2 className="about__title">
                 Know Who <span>I'M</span>
               </h2>
 
-              {/* ================= PROFESSIONAL INTRO ================= */}
+              {/* INTRO */}
               <p className="about__text">
-                Hi everyone! I'm <span>Suryanarayana</span>, a passionate 
-                <span> Java Full Stack Developer</span> from India with a strong 
-                foundation in building scalable, efficient, and real-world web applications.
+                Hi, I'm <span>Suryanarayana</span> — a passionate 
+                <span> Java Full Stack Developer</span> focused on building scalable, 
+                high-performance web applications.
               </p>
 
-              <p className="about__text">
-                I specialize in backend development using 
-                <span> Spring Boot, REST APIs, Hibernate, and JPA</span>, along with 
-                creating dynamic and responsive user interfaces using 
-                <span> React.js, JavaScript, HTML5, and CSS3</span>.
-              </p>
+              {/* HIGHLIGHTS */}
+              <ul className="about__list">
+                <li>
+                  💻 Developed <span>3+ real-world projects</span> including 
+                  E-commerce and Job Platforms.
+                </li>
+                <li>
+                  ⚙️ Strong in <span>Java, Spring Boot, Hibernate, JPA </span> 
+                  for backend development.
+                </li>
+                <li>
+                  🎨 Skilled in <span>React.js, JavaScript, HTML5, CSS3 </span> 
+                  for building responsive UI.
+                </li>
+                <li>
+                  🔗 Experience in <span>RESTful APIs & full-stack architecture</span>.
+                </li>
+                <li>
+                  🧠 Solved <span>100+ problems</span> on LeetCode & HackerRank.
+                </li>
+                <li>
+                  🚀 Focus on <span>clean code, performance, and scalability</span>.
+                </li>
+              </ul>
 
-              <p className="about__text">
-                I have hands-on experience in 
-                <span> API-driven development, database interaction (SQL), 
-                and full-stack application architecture</span>, ensuring smooth 
-                integration between frontend and backend systems.
-              </p>
-
-              <p className="about__text">
-                My approach focuses on writing 
-                <span> clean, maintainable, and optimized code</span> while 
-                continuously improving my problem-solving abilities, debugging skills, 
-                and system design knowledge.
-              </p>
-
+              {/* CAREER GOAL */}
               <p className="about__text">
                 I am actively seeking opportunities as a 
-                <span> Fresher Java Full Stack Developer</span> where I can 
-                contribute to impactful projects and grow into a highly skilled 
-                software engineer.
+                <span> Fresher Java Full Stack Developer</span> to contribute 
+                to impactful projects and grow into a highly skilled engineer.
               </p>
 
-              {/* ================= INTERESTS (NEW SECTION) ================= */}
+              {/* HOBBIES */}
               <div className="about__hobbies">
-
                 <p className="about__text">
-                  Outside of coding, I enjoy engaging in activities that keep me 
-                  creative, focused, and inspired. I like playing sports such as 
-                  volleyball, traveling to new places, exploring different cultures, 
-                  writing, and practicing meditation to maintain a balanced and 
-                  productive lifestyle.
+                  <span>Beyond Coding:</span>
                 </p>
 
+                <ul className="about__list">
+                  <li>🏐 Playing Volleyball</li>
+                  <li>🧘 Practicing Meditation for focus & discipline</li>
+                  <li>💡 Problem solving on LeetCode & HackerRank</li>
+                </ul>
               </div>
-
             </motion.div>
 
             {/* RIGHT IMAGE */}
@@ -88,7 +90,7 @@ class About extends Component {
               transition={{ duration: 0.8 }}
             >
               <img
-                src="/profile.jpg"
+                src="https://png.pngtree.com/png-clipart/20231016/original/pngtree-professional-web-developer-3d-illustration-png-image_13322701.png"
                 alt="Suryanarayana"
               />
             </motion.div>
@@ -133,7 +135,6 @@ class About extends Component {
               <span>VS Code</span>
               <span>Postman</span>
               <span>GitHub</span>
-              <span>IntelliJ IDEA</span>
               <span>Chrome DevTools</span>
 
             </div>

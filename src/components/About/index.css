@@ -120,6 +120,21 @@
   }
 
 }
+.about__list {
+  margin: 15px 0;
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+.about__list li {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.about__list span {
+  color: #a855f7;
+  font-weight: 600;
+}
 
 /* ================= DESKTOP ================= */
 
