@@ -4,13 +4,13 @@ const projectsData = [
     name: "University Management System",
     description:
       "A robust backend system built using Spring Boot and Hibernate to manage university operations like students, faculty, and courses efficiently. Designed with REST APIs and scalable architecture for real-world applications.",
-    category: "backend",
+    category: "fullstack",
     github:
       "https://github.com/rsurya1304/University-Management-System",
-    live: "#",
-    islive: false,
+    live: "https://frontend-pink-tau-53.vercel.app/",
+    islive: true,
     image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu_yIgpog5e2Su6mddMnUhwB9euDvxofIG4g&s=0&h=200&w=300&c=1"
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxzqDKwxX8k9Bv3zA-dcMZi2wL5nkyFi4QHw&s"
   },
 
   {

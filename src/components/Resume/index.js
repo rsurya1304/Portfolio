@@ -5,21 +5,20 @@ const Resume = () => {
   return (
     <section className="resume">
 
-      {/* ✅ DOWNLOAD BUTTON (TOP) */}
+      {/* DOWNLOAD BUTTON */}
       <div className="resume__download">
         <a
           href="https://drive.google.com/uc?export=download&id=1cZWdSIJznHkk2ieXkyqx08OLxadlsNZ3"
           target="_blank"
           rel="noopener noreferrer"
-          download
         >
           ⬇ Download Resume
         </a>
       </div>
 
-      {/* ✅ PDF PREVIEW */}
+      {/* PDF PREVIEW */}
       <iframe
-        src="https://drive.google.com/file/d/1cZWdSIJznHkk2ieXkyqx08OLxadlsNZ3/preview"
+        src="https://drive.google.com/file/d/156C7pDcbe3KyYervmR5TFiPQmvzIJkjx/preview"
         title="Resume"
         className="resume__frame"
       ></iframe>
