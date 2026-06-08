@@ -7,7 +7,7 @@ const projectsData = [
     category: "fullstack",
     github:
       "https://github.com/rsurya1304/University-Management-System",
-    live: "https://frontend-pink-tau-53.vercel.app/",
+    live: "https://university-management-system-topaz.vercel.app/login",
     islive: true,
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxzqDKwxX8k9Bv3zA-dcMZi2wL5nkyFi4QHw&s"
