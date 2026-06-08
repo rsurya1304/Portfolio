@@ -8,7 +8,7 @@ const Resume = () => {
       {/* DOWNLOAD BUTTON */}
       <div className="resume__download">
         <a
-          href="https://drive.google.com/uc?export=download&id=1cZWdSIJznHkk2ieXkyqx08OLxadlsNZ3"
+          href="https://drive.google.com/uc?export=download&id=122p7c9GRoVtuH-xmcvxGpNSMsS1DS7eZ"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -18,7 +18,7 @@ const Resume = () => {
 
       {/* PDF PREVIEW */}
       <iframe
-        src="https://drive.google.com/file/d/156C7pDcbe3KyYervmR5TFiPQmvzIJkjx/preview"
+        src="https://drive.google.com/file/d/122p7c9GRoVtuH-xmcvxGpNSMsS1DS7eZ/preview"
         title="Resume"
         className="resume__frame"
       ></iframe>
