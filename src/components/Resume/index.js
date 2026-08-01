@@ -4,25 +4,19 @@ import "./index.css";
 const Resume = () => {
   return (
     <section className="resume">
-
       {/* DOWNLOAD BUTTON */}
       <div className="resume__download">
-        <a
-          href="https://drive.google.com/uc?export=download&id=122p7c9GRoVtuH-xmcvxGpNSMsS1DS7eZ"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="/resume.pdf" download>
           ⬇ Download Resume
         </a>
       </div>
 
       {/* PDF PREVIEW */}
       <iframe
-        src="https://drive.google.com/file/d/122p7c9GRoVtuH-xmcvxGpNSMsS1DS7eZ/preview"
+        src="/resume.pdf"
         title="Resume"
         className="resume__frame"
       ></iframe>
-
     </section>
   );
 };
