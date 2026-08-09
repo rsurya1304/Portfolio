@@ -2,39 +2,41 @@ import React from "react";
 import "./index.css";
 
 const Resume = () => {
-  const resume =
+
+  const viewResume =
     "https://drive.google.com/file/d/1fDJtJkGIYZFk8WR3vlVLQZ2e9AwtqTCp/view?usp=sharing";
+
+  const previewResume =
+    "https://drive.google.com/file/d/1fDJtJkGIYZFk8WR3vlVLQZ2e9AwtqTCp/preview";
 
   return (
     <section className="resume">
 
-      <h1>Resume</h1>
-
-      <p>
-        Download or View my latest Resume.
-      </p>
-
-      <div className="resume-buttons">
+      <div className="resume__download">
 
         <a
-          href={resume}
+          href={viewResume}
           target="_blank"
           rel="noopener noreferrer"
-          className="btn"
         >
-          View Resume
+          ⬇ Download Resume
         </a>
 
         <a
-          href={resume}
+          href={viewResume}
           target="_blank"
           rel="noopener noreferrer"
-          className="btn download"
         >
-          Download Resume
+          👁 Open in Google Drive
         </a>
 
       </div>
+
+      <iframe
+        src={previewResume}
+        title="Resume"
+        className="resume__frame"
+      />
 
     </section>
   );
